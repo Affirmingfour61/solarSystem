@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <%- include( "partials/head.ejs") %>
+
+</head>
+
+<body class="text-center">
+    <%- include( "partials/nav.ejs") %>
+
+<h2> <%= planet_name%></h2>
+<!-- place holder  -->
+<br>
+<%= planetInfo.description%>
+<br>
+Planet Size (radius):
+<%= planetInfo.radius%>
+<br>
+How long is one year on <%= planet_name %>:
+<%= planetInfo.yearLength%>
+<br>
+websiteLink:
+<%= planetInfo.websiteLink%>
+<br>
+How Long is One Earth Day on <%= planet_name %>:
+<%= planetInfo.oneEarthDay%>
+<br>
+How Many Moons:
+<%= planetInfo.moons%>
+<br>
+Distance From Sun:
+<%= planetInfo.distanceFromSun%>
+<br>
+<img src="<%= planetInfo.image%>" width=300px;>
+<br>
+<%- include( "partials/foot.ejs") %>
+
+
+</body>
+
+</html>
