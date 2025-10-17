@@ -30,6 +30,8 @@ app.get('/planet', (req, res) => {
 });
 
 
+
+
 app.get('/nasaPod', (req, res) => {
    res.render('comSoon.ejs');
 });
