@@ -28,6 +28,14 @@ app.get('/planet', (req, res) => {
    console.log(planetInfo);
    res.render('planetInfo.ejs', { planetInfo,planet_name} );
 });
+app.get('/rock', (req, res) => {
+   let planet_name = req.query.planetName;
+   let planetInfo = solarSystem[`get${planet_name}`]();
+   
+   console.log(planetInfo);
+   res.render('rockInfo.ejs', { planetInfo,planet_name} );
+
+});
 
 
 
